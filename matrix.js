@@ -37,7 +37,7 @@ function draw(){
         canvas.height
     );
 
-    ctx.fillStyle="#00ff88";
+ctx.fillStyle="#00D4FF";
     ctx.font=fontSize+"px monospace";
 
     for(let i=0;i<drops.length;i++){
