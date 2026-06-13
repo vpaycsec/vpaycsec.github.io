@@ -12,9 +12,6 @@ window.onload = function () {
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const screenSize = screen.width + " x " + screen.height;
 
-    ...
-}
-
     document.getElementById("browser").innerText =
         browser.includes("Chrome") ? "Chrome" :
         browser.includes("Firefox") ? "Firefox" :
@@ -36,6 +33,8 @@ function enterSite() {
         alert("Please enter Name and Email");
         return;
     }
+
+    alert("ACCESS GRANTED\n\nLoading CyVed...");
 
     document.getElementById("gateway").style.display = "none";
     document.getElementById("portfolio").style.display = "block";
