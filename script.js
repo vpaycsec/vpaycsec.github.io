@@ -1,10 +1,19 @@
 window.onload = function () {
 
+    const sessionId =
+        "CV-" +
+        Math.random().toString(36).substring(2, 8).toUpperCase();
+
+    document.getElementById("session").innerText = sessionId;
+
     const browser = navigator.userAgent;
     const platform = navigator.platform;
     const language = navigator.language;
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const screenSize = screen.width + " x " + screen.height;
+
+    ...
+}
 
     document.getElementById("browser").innerText =
         browser.includes("Chrome") ? "Chrome" :
