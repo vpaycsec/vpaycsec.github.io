@@ -8,6 +8,6 @@ window.onload = function () {
 
         document.getElementById("portfolio").style.display = "block";
 
-    }, 3000);
+  }, 2500);
 
 };
