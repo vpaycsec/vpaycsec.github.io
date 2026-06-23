@@ -11,56 +11,47 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const chars =
-"01ABCDEFGHIJKLMNOPQRSTUVWXYZ#$%&";
-
+const chars = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ#$%&";
 const fontSize = 14;
-
-const columns =
-canvas.width / fontSize;
+const columns = canvas.width / fontSize;
 
 const drops = [];
 
-for(let x=0;x<columns;x++){
-    drops[x]=1;
+for (let x = 0; x < columns; x++) {
+drops[x] = 1;
 }
 
-function draw(){
+function draw() {
 
-    ctx.fillStyle =
-    "rgba(0,0,0,0.05)";
+```
+ctx.fillStyle = "rgba(0,0,0,0.05)";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillRect(
-        0,
-        0,
-        canvas.width,
-        canvas.height
+ctx.fillStyle = "#00D4FF";
+ctx.font = fontSize + "px monospace";
+
+for (let i = 0; i < drops.length; i++) {
+
+    const text =
+        chars[Math.floor(Math.random() * chars.length)];
+
+    ctx.fillText(
+        text,
+        i * fontSize,
+        drops[i] * fontSize
     );
 
-ctx.fillStyle="#00D4FF";
-    ctx.font=fontSize+"px monospace";
-
-    for(let i=0;i<drops.length;i++){
-
-        const text=
-        chars[Math.floor(
-        Math.random()*chars.length)];
-
-        ctx.fillText(
-        text,
-        i*fontSize,
-        drops[i]*fontSize);
-
-        if(
-            drops[i]*fontSize>
-            canvas.height &&
-            Math.random()>0.975
-        ){
-            drops[i]=0;
-        }
-
-        drops[i]++;
+    if (
+        drops[i] * fontSize > canvas.height &&
+        Math.random() > 0.975
+    ) {
+        drops[i] = 0;
     }
+
+    drops[i]++;
+}
+```
+
 }
 
-setInterval(draw,35);
+setInterval(draw, 35);
