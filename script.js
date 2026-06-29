@@ -11,3 +11,8 @@ window.onload = function () {
   }, 2500);
 
 };
+function resumeSoon(){
+
+    alert("Resume will be available soon.");
+
+}
