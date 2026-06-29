@@ -369,3 +369,76 @@ hr{
     margin:50px 0;
 
 }
+.edu-card{
+
+    background:#0F172A;
+
+    border:1px solid #1E293B;
+
+    border-left:5px solid #00D4FF;
+
+    border-radius:15px;
+
+    padding:28px;
+
+    margin-top:25px;
+
+}
+
+.edu-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+}
+
+.edu-header h3{
+
+    color:#ffffff;
+
+    margin-bottom:8px;
+
+}
+
+.edu-header p{
+
+    margin:4px 0;
+
+}
+
+.edu-university{
+
+    color:#00D4FF;
+
+    font-weight:600;
+
+}
+
+.edu-date{
+
+    color:#00FF88;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+.edu-line{
+
+    margin:18px 0;
+
+    background:#334155;
+
+}
+
+.edu-score{
+
+    color:#DBE4EE;
+
+}
