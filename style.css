@@ -205,3 +205,84 @@ hr{
 
     margin:30px 0;
 }
+.hero{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+.hero-name{
+
+    font-size:58px;
+
+    color:#00D4FF;
+
+    margin-bottom:10px;
+
+    letter-spacing:2px;
+
+}
+
+.hero-role{
+
+    color:white;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.hero-domain{
+
+    color:#00FF88;
+
+    font-size:20px;
+
+    font-weight:400;
+
+    margin-bottom:40px;
+
+}
+
+.education-box{
+
+    display:inline-block;
+
+    padding:25px 35px;
+
+    background:#0F172A;
+
+    border-radius:15px;
+
+    border:1px solid #1E293B;
+
+    box-shadow:0 0 20px rgba(0,212,255,0.15);
+
+}
+
+.education-box strong{
+
+    color:#00D4FF;
+
+    font-size:19px;
+
+}
+
+.education-box p{
+
+    color:#dbe4ee;
+
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    margin-top:30px;
+
+}
