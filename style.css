@@ -4,6 +4,10 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:'Segoe UI',sans-serif;
     background:#050816;
@@ -11,229 +15,228 @@ body{
     overflow-x:hidden;
 }
 
-/* Security Gateway */
+/*==========================
+    SECURITY GATEWAY
+==========================*/
 
 #gateway{
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:rgba(5,8,22,0.9);
+    background:rgba(5,8,22,0.92);
 }
 
 .gateway-box{
+
     width:650px;
     max-width:90%;
+
     padding:40px;
 
-    background:#0f172a;
+    background:#0F172A;
 
-    border:1px solid #00d4ff;
+    border:1px solid #00D4FF;
 
     border-radius:16px;
 
-    box-shadow:
-    0 0 40px rgba(0,212,255,0.25);
+    box-shadow:0 0 40px rgba(0,212,255,.25);
 
     backdrop-filter:blur(10px);
+
 }
 
 .gateway-box h1{
-    color:#00d4ff;
 
-    margin-bottom:20px;
+    text-align:center;
+
+    color:#00D4FF;
+
+    margin-bottom:25px;
 
     font-size:32px;
 
     letter-spacing:2px;
 
-    text-align:center;
 }
 
-/* Scan Section */
+/*==========================
+        SCAN
+==========================*/
 
 .scan{
+
     font-family:Consolas,monospace;
 
-    color:#00ff88;
+    color:#00FF88;
 
-    margin-bottom:25px;
+    background:#08111F;
 
-    line-height:1.8;
-
-    font-size:15px;
-
-    background:#08111f;
+    border-left:4px solid #00D4FF;
 
     padding:20px;
 
     border-radius:10px;
 
-    border-left:4px solid #00d4ff;
-}
-
-/* Input Fields */
-
-input{
-    width:100%;
-
-    padding:14px;
-
-    margin-top:10px;
-
-    margin-bottom:20px;
-
-    background:#111827;
-
-    border:1px solid #334155;
-
-    border-radius:8px;
-
-    color:white;
+    line-height:1.9;
 
     font-size:15px;
+
 }
 
-input:focus{
-    outline:none;
-
-    border-color:#00d4ff;
-
-    box-shadow:
-    0 0 10px rgba(0,212,255,0.4);
-}
-
-/* Button */
-
-button{
-    width:100%;
-
-    padding:15px;
-
-    border:none;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    color:white;
-
-    background:
-    linear-gradient(
-    90deg,
-    #00d4ff,
-    #1e90ff
-    );
-
-    transition:0.3s;
-}
-
-button:hover{
-    transform:translateY(-2px);
-
-    box-shadow:
-    0 0 20px rgba(0,212,255,0.4);
-}
-
-/* Portfolio */
+/*==========================
+      PORTFOLIO
+==========================*/
 
 #portfolio{
+
     display:none;
 
-    max-width:1100px;
+    max-width:1200px;
 
     margin:auto;
 
-    padding:60px 40px;
+    padding:40px;
+
 }
+
+/*==========================
+      NAVIGATION
+==========================*/
+
+.navbar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 35px;
+
+    margin-bottom:50px;
+
+    background:rgba(15,23,42,.85);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid #1E293B;
+
+    border-radius:15px;
+
+}
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:white;
+
+    letter-spacing:3px;
+
+}
+
+.logo span{
+
+    color:#00D4FF;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#dbe4ee;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.nav-links a:hover{
+
+    color:#00D4FF;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#00D4FF;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/*==========================
+       HERO
+==========================*/
 
 .hero{
-    text-align:center;
-
-    padding:80px 0;
-}
-
-.hero h1{
-    font-size:52px;
-
-    color:#00d4ff;
-
-    margin-bottom:15px;
-}
-
-.hero h3{
-    color:#b8c5d6;
-
-    margin-bottom:20px;
-}
-
-.hero p{
-    color:#dbe4ee;
-}
-
-/* Sections */
-
-h2{
-    color:#00d4ff;
-
-    margin-top:40px;
-
-    margin-bottom:15px;
-}
-
-p,
-li{
-    color:#dbe4ee;
-
-    line-height:1.8;
-}
-
-ul{
-    padding-left:20px;
-}
-
-hr{
-    border:0;
-
-    height:1px;
-
-    background:#1e293b;
-
-    margin:30px 0;
-}
-.hero{
 
     text-align:center;
 
-    padding:70px 20px;
+    padding:60px 20px;
 
 }
 
 .hero-name{
 
-    font-size:58px;
+    font-size:60px;
 
     color:#00D4FF;
 
-    margin-bottom:10px;
-
     letter-spacing:2px;
+
+    margin-bottom:10px;
 
 }
 
 .hero-role{
 
+    font-size:30px;
+
     color:white;
 
-    font-size:28px;
-
-    margin-bottom:15px;
-
-    font-weight:600;
+    margin-bottom:12px;
 
 }
 
@@ -243,9 +246,7 @@ hr{
 
     font-size:20px;
 
-    font-weight:400;
-
-    margin-bottom:40px;
+    margin-bottom:35px;
 
 }
 
@@ -253,15 +254,15 @@ hr{
 
     display:inline-block;
 
-    padding:25px 35px;
-
     background:#0F172A;
-
-    border-radius:15px;
 
     border:1px solid #1E293B;
 
-    box-shadow:0 0 20px rgba(0,212,255,0.15);
+    border-radius:15px;
+
+    padding:25px 35px;
+
+    box-shadow:0 0 20px rgba(0,212,255,.15);
 
 }
 
@@ -269,20 +270,102 @@ hr{
 
     color:#00D4FF;
 
-    font-size:19px;
+    font-size:20px;
 
 }
 
 .education-box p{
 
-    color:#dbe4ee;
+    color:#DBE4EE;
 
-    line-height:1.8;
+    line-height:1.9;
 
 }
 
 .hero-buttons{
 
-    margin-top:30px;
+    margin-top:35px;
+
+}
+
+.action-btn{
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:13px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(90deg,#00D4FF,#1E90FF);
+
+    transition:.3s;
+
+}
+
+.action-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(0,212,255,.4);
+
+}
+
+/*==========================
+      SECTIONS
+==========================*/
+
+section{
+
+    margin-top:70px;
+
+}
+
+h2{
+
+    color:#00D4FF;
+
+    margin-bottom:20px;
+
+    font-size:32px;
+
+}
+
+p{
+
+    color:#DBE4EE;
+
+    line-height:1.9;
+
+}
+
+ul{
+
+    padding-left:20px;
+
+}
+
+li{
+
+    color:#DBE4EE;
+
+    line-height:2;
+
+}
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#1E293B;
+
+    margin:50px 0;
 
 }
