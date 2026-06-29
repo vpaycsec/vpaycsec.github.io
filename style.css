@@ -442,3 +442,60 @@ hr{
     color:#DBE4EE;
 
 }
+.experience-card{
+
+    background:#0F172A;
+
+    border-left:5px solid #00D4FF;
+
+    border-radius:15px;
+
+    padding:28px;
+
+    margin:30px 0;
+
+    transition:.3s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 0 25px rgba(0,212,255,.18);
+
+}
+
+.experience-card h3{
+
+    color:#00D4FF;
+
+    margin-bottom:6px;
+
+}
+
+.duration{
+
+    color:#00FF88;
+
+    font-size:14px;
+
+    display:block;
+
+    margin-bottom:12px;
+
+}
+
+.experience-card h4{
+
+    color:#ffffff;
+
+    margin-bottom:15px;
+
+}
+
+.experience-card p{
+
+    line-height:1.8;
+
+}
